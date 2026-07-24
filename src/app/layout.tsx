@@ -39,11 +39,11 @@ const arabic = IBM_Plex_Sans_Arabic({
 export const metadata: Metadata = {
   metadataBase: new URL("https://zygnal-sy.com"),
   title: {
-    default: "Zygnal — Telecom Infrastructure & Network Deployment",
+    default: "Zygnal — Mobile Network Infrastructure & Deployment",
     template: "%s · Zygnal",
   },
   description:
-    "Zygnal is a Syrian telecommunications infrastructure company delivering end-to-end mobile network deployment, civil works, power systems, and modernization to 5G. Local expertise, global standards, trusted execution.",
+    "Zygnal builds, powers, and modernizes mobile networks across Syria — from the first site survey to live 5G. Field-proven engineering, multi-vendor experience, delivered on schedule.",
   keywords: [
     "telecom infrastructure",
     "network deployment",
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
     "Zygnal",
   ],
   openGraph: {
-    title: "Zygnal — Telecom Infrastructure & Network Deployment",
+    title: "Zygnal — Mobile Network Infrastructure & Deployment",
     description:
-      "End-to-end mobile network deployment, civil works, power, and modernization to 5G. Local expertise. Global standards. Trusted execution.",
+      "We build, power, and modernize mobile networks across Syria — from bare ground to live signal.",
     type: "website",
     locale: "en_US",
   },

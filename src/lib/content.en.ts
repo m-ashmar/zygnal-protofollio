@@ -1,14 +1,14 @@
 /**
  * English content dictionary — the single source of truth for all UI copy.
  * The Arabic dictionary (content.ar.ts) mirrors this exact shape.
- * Data sourced from the client intake form.
+ * Voice: confident engineer's precision — concrete, active, a touch of craft.
  */
 
 const en = {
   meta: {
-    title: "Zygnal — Telecom Infrastructure & Network Deployment",
+    title: "Zygnal — Mobile Network Infrastructure & Deployment",
     description:
-      "Zygnal is a Syrian telecommunications infrastructure company delivering end-to-end mobile network deployment, civil works, power systems, and modernization to 5G. Local expertise, global standards, trusted execution.",
+      "Zygnal builds, powers, and modernizes mobile networks across Syria — from the first site survey to live 5G. Field-proven engineering, multi-vendor experience, delivered on schedule.",
   },
 
   nav: {
@@ -20,7 +20,7 @@ const en = {
       { href: "#work", label: "Clients" },
       { href: "#contact", label: "Contact" },
     ],
-    cta: "Get in touch",
+    cta: "Start a project",
     skip: "Skip to content",
   },
 
@@ -29,7 +29,7 @@ const en = {
     titleTop: "Building",
     titleBottom: "the network.",
     intro:
-      "Zygnal deploys, powers, and modernizes mobile infrastructure — end to end. Scroll to watch a site come to life.",
+      "Every tower starts as empty ground. Scroll to watch Zygnal raise one — from survey to signal.",
     scroll: "Scroll",
     phaseLabel: "Phase",
     connector: "Signal · live",
@@ -41,49 +41,49 @@ const en = {
         id: "survey",
         index: "01",
         title: "Site Survey & Acquisition",
-        desc: "Every rollout begins on the ground — site selection, technical audit, and access secured.",
+        desc: "Before anything rises, the ground is read — coverage, access, and rights secured.",
       },
       {
         id: "civil",
         index: "02",
         title: "Civil Works & Foundation",
-        desc: "Excavation and reinforced foundations engineered to carry the structure for decades.",
+        desc: "Concrete and steel go deep — a base cut to hold the mast for decades.",
       },
       {
         id: "tower",
         index: "03",
         title: "Tower Erection",
-        desc: "The lattice mast rises — assembled and aligned by experienced field teams.",
+        desc: "Section by section, the mast climbs the skyline — plumb to the millimetre.",
       },
       {
         id: "bts",
         index: "04",
         title: "BTS & Antenna Installation",
-        desc: "Base station, antennas, RRUs, and feeder cabling installed and integrated.",
+        desc: "Antennas, radios, and feeders take their place — and the site learns to speak.",
       },
       {
         id: "power",
         index: "05",
         title: "Power Systems Online",
-        desc: "AC/DC systems, rectifiers, batteries, and generators bring the site to life.",
+        desc: "Rectifiers, batteries, and generators wake the site — power that never blinks.",
       },
       {
         id: "fiber",
         index: "06",
         title: "Fiber & Transmission",
-        desc: "Fiber and transmission tie the site into the wider network backbone.",
+        desc: "Fiber threads the last metres, and the site joins the backbone.",
       },
       {
         id: "live",
         index: "07",
         title: "Network Goes Live",
-        desc: "Integration complete — signal radiates and subscribers connect.",
+        desc: "Integration clears — the signal goes out, and the first call connects.",
       },
       {
         id: "modernize",
         index: "08",
         title: "Modernization to 5G",
-        desc: "Swaps and upgrades carry the live network from 4G into the 5G era.",
+        desc: "Years on, we swap and upgrade in place — carrying the live network into 5G.",
       },
     ],
   },
@@ -91,72 +91,72 @@ const en = {
   about: {
     index: "01",
     eyebrow: "Who we are",
-    titleLead: "A local partner built to ",
-    titleAccent: "global standards.",
+    titleLead: "The team behind ",
+    titleAccent: "the signal.",
     intro:
-      "Zygnal is a Syrian telecommunications infrastructure company specializing in end-to-end mobile network deployment and engineering services. Our core capabilities span telecom site construction, installation and dismantling of mobile base stations, civil works, power infrastructure, site acquisition support, and logistics — every activity required for successful network rollout, modernization, and maintenance.",
+      "Zygnal is a Syrian telecom infrastructure company. We build, power, and maintain the physical layer of mobile networks — the towers, base stations, civil works, and power systems that carry every call, message, and megabyte.",
     visionLabel: "Vision",
     vision:
-      "To be the preferred local partner for global telecommunications vendors and operators — delivering excellence in network deployment, modernization, and infrastructure services.",
+      "To be the first partner global operators and vendors call when they build in Syria.",
     missionLabel: "Mission",
     mission:
-      "To support telecom operators and technology partners with efficient, high-quality infrastructure and engineering services that accelerate network deployment and modernization, while maintaining the highest standards of safety, quality, and performance.",
-    valuesLabel: "Core values",
+      "To give operators and vendors a local team they never have to worry about — on site fast, engineered right, and safe on every shift.",
+    valuesLabel: "What we stand on",
   },
 
   stats: [
     { value: "15+", label: "Engineers" },
-    { value: "7", label: "Technical teams" },
+    { value: "7", label: "Field teams" },
     { value: "Nationwide", label: "Deployment reach" },
     { value: "Multi-vendor", label: "Huawei · Ericsson · Nokia" },
   ],
 
   coreValues: [
     { title: "Safety", desc: "HSE-first culture on every site, every shift." },
-    { title: "Quality", desc: "Global engineering standards, locally executed." },
-    { title: "Integrity", desc: "Transparent, dependable, accountable delivery." },
-    { title: "Customer Focus", desc: "Operator and vendor success is our metric." },
-    { title: "Innovation", desc: "Modern methods for modern networks." },
-    { title: "Execution Excellence", desc: "Fast mobilization, end-to-end ownership." },
+    { title: "Quality", desc: "To spec, every time — measured, not assumed." },
+    { title: "Integrity", desc: "We say what we'll do, then do it." },
+    { title: "Customer Focus", desc: "Your rollout is our reputation." },
+    { title: "Innovation", desc: "We retire the old way when a better one exists." },
+    { title: "Execution Excellence", desc: "On site in days, owned to sign-off." },
   ],
 
   services: {
     index: "02",
     eyebrow: "What we do",
-    titleLead: "End-to-end services across the ",
-    titleAccent: "site lifecycle.",
+    titleLead: "From bare ground ",
+    titleAccent: "to live signal.",
     intro:
-      "From the first survey to ongoing modernization, Zygnal owns every stage of network deployment — so operators and vendors get one accountable partner.",
+      "Survey, civil works, install, power, integration, maintenance — one accountable team from first visit to live signal, so nothing slips between vendors.",
     coreLabel: "Core",
     featuredFlow: "Survey → On-air",
     items: [
       {
         title: "Telecom Infrastructure Deployment",
-        desc: "End-to-end rollout of greenfield and rooftop telecom sites — from survey to on-air.",
+        desc: "New greenfield and rooftop sites taken from empty ground to on-air — surveyed, built, integrated, handed over.",
       },
       {
         title: "BTS Installation & Dismantling",
-        desc: "Installation, swap, and dismantling of mobile base stations across all major vendors.",
+        desc: "Base stations installed, swapped, or cleanly removed — Huawei, Ericsson, Nokia, ZTE, no relearning curve.",
       },
       {
         title: "Civil Works & Site Construction",
-        desc: "Foundations, towers, rooftops, shelters, and structural works built to spec.",
+        desc: "Foundations, towers, rooftops, and shelters — the structure everything else bolts onto, built to hold.",
       },
       {
         title: "Power & Electrical Systems",
-        desc: "AC/DC systems, rectifiers, batteries, and generators for reliable site power.",
+        desc: "AC/DC, rectifiers, batteries, and generators sized so the site stays up when the grid goes down.",
       },
       {
         title: "Network Modernization",
-        desc: "Technology upgrades and swaps that move live networks toward 5G.",
+        desc: "Upgrades and swaps on live networks — more capacity and a clear path to 5G, without downtime.",
       },
       {
         title: "Operation & Maintenance (O&M)",
-        desc: "Preventive and corrective maintenance that keeps networks performing.",
+        desc: "Preventive and corrective maintenance that catches faults before subscribers ever feel them.",
       },
       {
         title: "Project Management & Technical Support",
-        desc: "Planning, execution, and quality assurance across the full project lifecycle.",
+        desc: "Planning, coordination, and quality assurance that keep every site on schedule and on spec.",
       },
     ],
   },
@@ -167,7 +167,7 @@ const en = {
     titleLead: "The engineering depth to ",
     titleAccent: "execute anywhere.",
     intro:
-      "A full-stack field engineering capability — structural, electrical, RF, and transmission — delivered by teams that mobilize fast and finish clean.",
+      "Full-stack field engineering — structural, electrical, RF, and transmission — in the hands of teams that show up ready and finish clean.",
     execLabel: "Execution capability",
     vendorLabel: "Multi-vendor field ops",
     items: [
@@ -185,11 +185,11 @@ const en = {
       "Multi-Vendor Field Operations",
     ],
     execution: [
-      "Experienced field engineers and technicians",
-      "Nationwide deployment teams",
-      "Fast mobilization across Syria",
-      "End-to-end project execution",
-      "Strong HSE and Quality Management practices",
+      "Seasoned field engineers and technicians",
+      "Teams positioned across the country",
+      "On site in days, anywhere in Syria",
+      "One team from kickoff to sign-off",
+      "Safety and quality managed by the book",
     ],
   },
 
@@ -208,10 +208,10 @@ const en = {
   work: {
     index: "04",
     eyebrow: "Trusted by",
-    titleLead: "Delivering for operators and ",
-    titleAccent: "partners.",
+    titleLead: "Chosen by operators, ",
+    titleAccent: "backed by partners.",
     intro:
-      "Zygnal supports mobile operators directly and through its engineering network — with strategic partners spanning Syria and the Gulf.",
+      "We deliver for mobile operators directly and through our engineering network — with partners spanning Syria and the Gulf.",
     clientsLabel: "Major clients",
     partnersLabel: "Strategic partners",
     clients: [
@@ -230,8 +230,8 @@ const en = {
     titleLead: "Proven ",
     titleAccent: "in the field.",
     intro:
-      "A snapshot of the engagements Zygnal delivers across Syria. Client-named case studies — with full scope, engineering challenges, and on-site photography — are available on request.",
-    requestLabel: "Client case studies available on request",
+      "A snapshot of the work Zygnal delivers across Syria. Named, detailed case studies — scope, engineering challenges, and on-site photography — are available on request.",
+    requestLabel: "Full case studies on request",
     scopeLabel: "Scope",
     items: [
       {
@@ -240,7 +240,7 @@ const en = {
         title: "Mobile Network Rollout",
         sector: "Mobile operator · Syria",
         scope:
-          "Greenfield and rooftop deployment — survey, civil works, BTS installation, power, and integration to on-air.",
+          "Greenfield and rooftop sites carried from survey through civil, install, power, and integration to on-air.",
       },
       {
         code: "02",
@@ -248,7 +248,7 @@ const en = {
         title: "Network Modernization & Swap",
         sector: "Mobile operator · Syria",
         scope:
-          "Technology upgrade and multi-vendor equipment swap toward 5G, with supporting civil and power systems.",
+          "Live-network upgrade and multi-vendor swap toward 5G, with the civil and power works to support it.",
       },
     ],
   },
@@ -258,7 +258,7 @@ const en = {
     titleLead: "Your next site, ",
     titleAccent: "on air.",
     intro:
-      "Planning a rollout, a swap, or a modernization program? Zygnal mobilizes fast and delivers to global standards.",
+      "Planning a rollout, a swap, or a modernization program? Tell us the sites and the timeline — we'll tell you how fast we can have them on air.",
     email: "Bnabulsi@zygnal-sy.com",
     phones: [
       { label: "Syria", value: "+963 944 222 169", tel: "+963944222169" },

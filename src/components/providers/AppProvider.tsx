@@ -48,11 +48,14 @@ export default function AppProvider({ children }: { children: ReactNode }) {
     const el = document.documentElement;
     const l = el.getAttribute("lang");
     const th = el.getAttribute("data-theme");
-    if (isLocale(l)) setLocaleState(l);
+    let activeLocale: Locale = defaultLocale;
+    if (isLocale(l)) activeLocale = l;
     else {
       const stored = localStorage.getItem("locale");
-      if (isLocale(stored)) setLocaleState(stored);
+      if (isLocale(stored)) activeLocale = stored;
     }
+    setLocaleState(activeLocale);
+    document.title = dictionaries[activeLocale].meta.title;
     if (isTheme(th)) setThemeState(th);
     else {
       const stored = localStorage.getItem("theme");
