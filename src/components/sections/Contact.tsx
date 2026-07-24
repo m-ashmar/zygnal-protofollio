@@ -59,7 +59,7 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="flex gap-16">
+          <div className="flex flex-wrap gap-x-14 gap-y-8">
             <div>
               <div className="eyebrow mb-4">{c.navLabel}</div>
               <ul className="space-y-2.5">
@@ -70,6 +70,33 @@ export default function Contact() {
                       className="text-sm text-text-muted transition-colors hover:text-text"
                     >
                       {n.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <div className="eyebrow mb-4">{c.contactLabel}</div>
+              <ul className="space-y-2.5 text-sm text-text-muted">
+                <li>
+                  <a
+                    href={`mailto:${c.email}`}
+                    className="transition-colors hover:text-cyan"
+                  >
+                    {c.email}
+                  </a>
+                </li>
+                {c.phones.map((ph) => (
+                  <li key={ph.tel}>
+                    <a
+                      href={`tel:${ph.tel}`}
+                      dir="ltr"
+                      className="inline-flex items-center gap-2 transition-colors hover:text-cyan"
+                    >
+                      <span className="font-mono text-[0.62rem] uppercase tracking-[0.15em] text-text-faint">
+                        {ph.label}
+                      </span>
+                      {ph.value}
                     </a>
                   </li>
                 ))}

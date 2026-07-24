@@ -37,7 +37,7 @@ const arabic = IBM_Plex_Sans_Arabic({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://zygnal.com"),
+  metadataBase: new URL("https://zygnal-sy.com"),
   title: {
     default: "Zygnal — Telecom Infrastructure & Network Deployment",
     template: "%s · Zygnal",

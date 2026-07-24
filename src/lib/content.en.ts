@@ -226,29 +226,29 @@ const en = {
 
   projects: {
     index: "05",
-    eyebrow: "Flagship projects",
-    titleLead: "Selected work, ",
-    titleAccent: "coming soon.",
+    eyebrow: "Selected work",
+    titleLead: "Proven ",
+    titleAccent: "in the field.",
     intro:
-      "Detailed case studies — scope, engineering challenge, and on-site photography — are being prepared with the client.",
-    awaiting: "Awaiting details",
-    clientLabel: "Client",
-    countryLabel: "Country",
+      "A snapshot of the engagements Zygnal delivers across Syria. Client-named case studies — with full scope, engineering challenges, and on-site photography — are available on request.",
+    requestLabel: "Client case studies available on request",
     scopeLabel: "Scope",
     items: [
       {
-        code: "PRJ-01",
-        title: "Flagship Project 01",
-        client: "To be confirmed",
-        country: "Syria",
-        scope: "Details to be provided by client.",
+        code: "01",
+        tag: "Multi-vendor",
+        title: "Mobile Network Rollout",
+        sector: "Mobile operator · Syria",
+        scope:
+          "Greenfield and rooftop deployment — survey, civil works, BTS installation, power, and integration to on-air.",
       },
       {
-        code: "PRJ-02",
-        title: "Flagship Project 02",
-        client: "To be confirmed",
-        country: "Syria",
-        scope: "Details to be provided by client.",
+        code: "02",
+        tag: "4G → 5G",
+        title: "Network Modernization & Swap",
+        sector: "Mobile operator · Syria",
+        scope:
+          "Technology upgrade and multi-vendor equipment swap toward 5G, with supporting civil and power systems.",
       },
     ],
   },
@@ -259,10 +259,15 @@ const en = {
     titleAccent: "on air.",
     intro:
       "Planning a rollout, a swap, or a modernization program? Zygnal mobilizes fast and delivers to global standards.",
-    email: "info@zygnal.com",
+    email: "Bnabulsi@zygnal-sy.com",
+    phones: [
+      { label: "Syria", value: "+963 944 222 169", tel: "+963944222169" },
+      { label: "UAE", value: "+971 56 284 6033", tel: "+971562846033" },
+    ],
     location: "Damascus, Syria",
     branch: "Rawda, Damascus",
     navLabel: "Navigate",
+    contactLabel: "Contact",
     locationsLabel: "Locations",
     rights: "All rights reserved.",
   },
