@@ -3,6 +3,8 @@
  * logo inherits the surrounding text color and adapts to light/dark + the
  * dark hero automatically (no separate light/dark asset needed).
  */
+const LOGO_SRC = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/brand/zygnal-logo.png`;
+
 export default function Logo({ className = "" }: { className?: string }) {
   return (
     <span
@@ -11,8 +13,8 @@ export default function Logo({ className = "" }: { className?: string }) {
       className={`inline-block bg-current ${className}`}
       style={{
         aspectRatio: "1600 / 419",
-        WebkitMaskImage: "url(/brand/zygnal-logo.png)",
-        maskImage: "url(/brand/zygnal-logo.png)",
+        WebkitMaskImage: `url(${LOGO_SRC})`,
+        maskImage: `url(${LOGO_SRC})`,
         WebkitMaskRepeat: "no-repeat",
         maskRepeat: "no-repeat",
         WebkitMaskSize: "contain",
