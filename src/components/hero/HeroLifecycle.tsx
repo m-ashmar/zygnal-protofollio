@@ -148,10 +148,17 @@ export default function HeroLifecycle() {
         {/* intro overlay */}
         <div
           ref={introRef}
+          dir={locale === "ar" ? "rtl" : "ltr"}
           className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-6 text-center"
         >
           <div className="eyebrow mb-5">{t.hero.location}</div>
-          <h1 className="font-display text-[13vw] leading-[0.86] font-bold tracking-tight sm:text-[9vw] lg:text-[7.5rem]">
+          <h1
+            className={
+              locale === "ar"
+                ? "font-display text-[11.5vw] leading-[1.2] font-bold sm:text-[8vw] lg:text-[6.75rem]"
+                : "font-display text-[13vw] leading-[0.86] font-bold tracking-tight sm:text-[9vw] lg:text-[7.5rem]"
+            }
+          >
             <span className="text-gradient">{t.hero.titleTop}</span>
             <br />
             <span className="text-text">{t.hero.titleBottom}</span>

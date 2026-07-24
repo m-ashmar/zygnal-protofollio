@@ -1,6 +1,7 @@
 "use client";
 
 import Reveal from "@/components/site/Reveal";
+import Logo from "@/components/site/Logo";
 import MagneticButton from "@/components/ui/MagneticButton";
 import SignalRings from "@/components/ui/SignalRings";
 import { useApp } from "@/components/providers/AppProvider";
@@ -51,13 +52,8 @@ export default function Contact() {
         {/* footer bar */}
         <div className="flex flex-col gap-8 border-t border-line/60 py-12 md:flex-row md:items-start md:justify-between">
           <div className="max-w-sm">
-            <div className="flex items-center gap-2.5">
-              <span className="glow-dot h-2.5 w-2.5 rounded-full bg-cyan" />
-              <span className="font-display text-xl font-semibold">
-                {t.company.name}
-              </span>
-            </div>
-            <p className="mt-4 text-sm text-text-muted">{t.company.tagline}</p>
+            <Logo className="h-8 text-text" />
+            <p className="mt-5 text-sm text-text-muted">{t.company.tagline}</p>
             <p className="mt-4 font-mono text-[0.7rem] uppercase tracking-[0.15em] text-text-faint">
               {t.company.legalName}
             </p>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Logo from "@/components/site/Logo";
 import { useApp } from "@/components/providers/AppProvider";
 import { localeMeta } from "@/lib/i18n";
 
@@ -41,14 +42,12 @@ export default function Nav() {
       }`}
     >
       <nav className="container-x flex h-16 items-center justify-between">
-        <a href="#top" className="group flex items-center gap-2.5 text-text">
-          <span className="relative grid h-7 w-7 place-items-center">
-            <span className="absolute inset-0 rounded-md border border-cyan/50" />
-            <span className="glow-dot h-2 w-2 rounded-full bg-cyan" />
-          </span>
-          <span className="font-display text-lg font-semibold tracking-tight">
-            {t.company.name}
-          </span>
+        <a
+          href="#top"
+          aria-label="Zygnal — home"
+          className="flex items-center text-text transition-opacity hover:opacity-80"
+        >
+          <Logo className="h-6 sm:h-7" />
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">
