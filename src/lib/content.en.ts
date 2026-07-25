@@ -219,8 +219,9 @@ const en = {
       { name: "Syriatel", note: "Mobile operator — via sister company BES" },
     ],
     partners: [
-      { name: "BES", note: "Best Engineering Services — sister company" },
-      { name: "Zee Generation", note: "Dubai, UAE" },
+      { name: "BES", logo: "bes-logo.png", note: "Best Engineering Services — sister company" },
+      { name: "Amjaad Company", logo: "amjaad-logo.png", note: "General contracting" },
+      { name: "Zee Generation", logo: "", note: "Dubai, UAE" },
     ],
   },
 

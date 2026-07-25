@@ -5,7 +5,9 @@ import SectionHeader from "@/components/ui/SectionHeader";
 import Spotlight from "@/components/ui/Spotlight";
 import { useApp } from "@/components/providers/AppProvider";
 
-function EntityCard({
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+function ClientCard({
   name,
   note,
   accent,
@@ -45,6 +47,39 @@ function EntityCard({
   );
 }
 
+function PartnerCard({
+  name,
+  note,
+  logo,
+}: {
+  name: string;
+  note: string;
+  logo: string;
+}) {
+  return (
+    <Spotlight className="card card-hover group relative flex h-full flex-col items-center p-6 text-center">
+      {/* light logo tile — keeps colored/black marks legible in any theme */}
+      <div className="flex h-24 w-full items-center justify-center rounded-xl bg-white px-6 py-4 shadow-sm ring-1 ring-black/5">
+        {logo ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={`${BASE}/brand/${logo}`}
+            alt={name}
+            className="max-h-full max-w-[85%] object-contain"
+          />
+        ) : (
+          <span className="font-display text-2xl font-semibold tracking-tight text-[#0a1420]">
+            {name}
+          </span>
+        )}
+      </div>
+      <p className="mt-4 font-mono text-[0.72rem] uppercase tracking-[0.15em] text-text-muted">
+        {note}
+      </p>
+    </Spotlight>
+  );
+}
+
 export default function Work() {
   const { t } = useApp();
   const w = t.work;
@@ -64,37 +99,37 @@ export default function Work() {
           intro={w.intro}
         />
 
-        <div className="mt-14 grid gap-10 lg:grid-cols-2">
-          <div>
-            <Reveal>
-              <div className="eyebrow mb-5 flex items-center gap-3">
-                <span className="rule-draw h-px w-8 origin-left bg-cyan/60" />
-                {w.clientsLabel}
-              </div>
-            </Reveal>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {w.clients.map((c, i) => (
-                <Reveal key={c.name} delay={i * 80}>
-                  <EntityCard name={c.name} note={c.note} accent="cyan" />
-                </Reveal>
-              ))}
+        {/* clients */}
+        <div className="mt-14">
+          <Reveal>
+            <div className="eyebrow mb-5 flex items-center gap-3">
+              <span className="rule-draw h-px w-8 origin-left bg-cyan/60" />
+              {w.clientsLabel}
             </div>
+          </Reveal>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {w.clients.map((c, i) => (
+              <Reveal key={c.name} delay={i * 80}>
+                <ClientCard name={c.name} note={c.note} accent="cyan" />
+              </Reveal>
+            ))}
           </div>
+        </div>
 
-          <div>
-            <Reveal>
-              <div className="eyebrow mb-5 flex items-center gap-3">
-                <span className="rule-draw h-px w-8 origin-left bg-amber/60" />
-                {w.partnersLabel}
-              </div>
-            </Reveal>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {w.partners.map((p, i) => (
-                <Reveal key={p.name} delay={i * 80}>
-                  <EntityCard name={p.name} note={p.note} accent="amber" />
-                </Reveal>
-              ))}
+        {/* partners */}
+        <div className="mt-12">
+          <Reveal>
+            <div className="eyebrow mb-5 flex items-center gap-3">
+              <span className="rule-draw h-px w-8 origin-left bg-amber/60" />
+              {w.partnersLabel}
             </div>
+          </Reveal>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {w.partners.map((p, i) => (
+              <Reveal key={p.name} delay={i * 80}>
+                <PartnerCard name={p.name} note={p.note} logo={p.logo} />
+              </Reveal>
+            ))}
           </div>
         </div>
       </div>

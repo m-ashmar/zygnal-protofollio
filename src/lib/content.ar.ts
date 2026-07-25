@@ -222,8 +222,9 @@ const ar: typeof en = {
       { name: "Syriatel", note: "مشغّل هاتف محمول — عبر الشركة الشقيقة BES" },
     ],
     partners: [
-      { name: "BES", note: "أفضل الخدمات الهندسية — شركة شقيقة" },
-      { name: "Zee Generation", note: "دبي، الإمارات" },
+      { name: "BES", logo: "bes-logo.png", note: "أفضل الخدمات الهندسية — شركة شقيقة" },
+      { name: "شركة الأمجاد", logo: "amjaad-logo.png", note: "المقاولات العامة" },
+      { name: "Zee Generation", logo: "", note: "دبي، الإمارات" },
     ],
   },
 
