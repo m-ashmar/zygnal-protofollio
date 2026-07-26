@@ -29,7 +29,6 @@ jobs:
         run: npm run build
         env:
           GITHUB_PAGES: "true"
-          PAGES_REPO: ${{ github.event.repository.name }}
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
