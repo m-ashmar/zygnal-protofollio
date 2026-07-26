@@ -56,16 +56,26 @@ function PartnerCard({
   note: string;
   logo: string;
 }) {
+  // Full-bleed artwork logos (light mark on their own background) fill the tile.
+  const artwork = /\.jpe?g$/i.test(logo);
   return (
     <Spotlight className="card card-hover group relative flex h-full flex-col items-center p-6 text-center">
-      {/* light logo tile — keeps colored/black marks legible in any theme */}
-      <div className="flex h-24 w-full items-center justify-center rounded-xl bg-white px-6 py-4 shadow-sm ring-1 ring-black/5">
+      {/* logo tile — light plate for dark marks; the artwork logo fills its own tile */}
+      <div
+        className={`flex h-24 w-full items-center justify-center overflow-hidden rounded-xl shadow-sm ring-1 ring-black/5 ${
+          artwork ? "bg-bg-2" : "bg-white px-6 py-4"
+        }`}
+      >
         {logo ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={`${BASE}/brand/${logo}`}
             alt={name}
-            className="max-h-full max-w-[85%] object-contain"
+            className={
+              artwork
+                ? "h-full w-full object-cover"
+                : "max-h-full max-w-[85%] object-contain"
+            }
           />
         ) : (
           <span className="font-display text-2xl font-semibold tracking-tight text-[#0a1420]">

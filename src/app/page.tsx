@@ -8,6 +8,7 @@ import Services from "@/components/sections/Services";
 import Capabilities from "@/components/sections/Capabilities";
 import Industries from "@/components/sections/Industries";
 import Work from "@/components/sections/Work";
+import Board from "@/components/sections/Board";
 import Projects from "@/components/sections/Projects";
 import Contact from "@/components/sections/Contact";
 
@@ -28,6 +29,7 @@ export default function Home() {
         <Capabilities />
         <Industries />
         <Work />
+        <Board />
         <Projects />
         <Contact />
       </main>

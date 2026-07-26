@@ -18,6 +18,7 @@ const en = {
       { href: "#services", label: "Services" },
       { href: "#capabilities", label: "Capabilities" },
       { href: "#work", label: "Clients" },
+      { href: "#board", label: "Leadership" },
       { href: "#contact", label: "Contact" },
     ],
     cta: "Start a project",
@@ -221,12 +222,73 @@ const en = {
     partners: [
       { name: "BES", logo: "bes-logo.png", note: "Best Engineering Services — sister company" },
       { name: "Amjaad Company", logo: "amjaad-logo.png", note: "General contracting" },
-      { name: "Zee Generation", logo: "", note: "Dubai, UAE" },
+      { name: "Zee Generation", logo: "zee-logo.jpg", note: "Dubai, UAE" },
+    ],
+  },
+
+  board: {
+    index: "05",
+    eyebrow: "Leadership",
+    titleLead: "The people ",
+    titleAccent: "behind the build.",
+    intro:
+      "Operators, engineers, and industrialists who have run national networks and built companies — now steering Zygnal.",
+    members: [
+      {
+        photo: "bashar-naboulsi.jpg",
+        name: "Bashar Naboulsi",
+        role: "Founder & General Manager",
+        summary:
+          "25+ years of leadership in the telecommunications industry.",
+        points: [
+          "Former CTO, MTN Syria",
+          "Founder & General Manager of Zygnal; Founder of Zee Generation (Dubai)",
+          "Executive MBA (EMBA) — Higher Institute of Business Administration (HIBA)",
+        ],
+      },
+      {
+        photo: "houssam-tarabichi.jpg",
+        name: "Houssam Tarabichi",
+        role: "Board Member",
+        summary:
+          "Industrial entrepreneur with over three decades in manufacturing and industrial development.",
+        points: [
+          "B.Sc. Chemistry (1992)",
+          "Founder & Managing Director, Orchid for Cosmetic Industries (1997–present)",
+          "Founding Partner, Amjaad General Contracting — overseeing multiple Syria reconstruction projects",
+          "Chairman, Chemical Sector Committee, Damascus Suburbs Chamber of Industry (2006–2016)",
+        ],
+      },
+      {
+        photo: "mohammad-albitar.jpg",
+        name: "Dr. Mohammad Albitar",
+        role: "Finance Director — PhD, CFM, S.CPA",
+        summary:
+          "Accounting and advisory across technology, banking, non-profit, manufacturing, and healthcare.",
+        points: [
+          "Ph.D. in Accounting, Damascus University (2015)",
+          "Syrian Certified Public Accountant (S.CPA); Certified Finance Manager, USA (2025)",
+          "Senior Consultant, Ernst & Young (2023–present)",
+          "Regulatory Financial Relations Manager, MTN Syria (2016–2021)",
+        ],
+      },
+      {
+        photo: "kinan-saleh.jpg",
+        name: "Kinan Saleh",
+        role: "Board Member",
+        summary:
+          "16+ years of leadership and experience in the transmission field.",
+        points: [
+          "Former Transmission Manager and Head of Unit, Syriatel",
+          "Founder & General Manager, BES (Best Engineering Services)",
+          "Extensive experience in WiFi planning and execution",
+        ],
+      },
     ],
   },
 
   projects: {
-    index: "05",
+    index: "06",
     eyebrow: "Selected work",
     titleLead: "Proven ",
     titleAccent: "in the field.",
