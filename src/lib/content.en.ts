@@ -106,8 +106,8 @@ const en = {
   },
 
   stats: [
-    { value: "15+", label: "Engineers" },
-    { value: "7", label: "Field teams" },
+    { value: "50+", label: "Engineers" },
+    { value: "15", label: "Field teams" },
     { value: "Nationwide", label: "Deployment reach" },
     { value: "Multi-vendor", label: "Huawei · Ericsson · Nokia" },
   ],
@@ -137,7 +137,7 @@ const en = {
       },
       {
         title: "BTS Installation & Dismantling",
-        desc: "Base stations installed, swapped, or cleanly removed — Huawei, Ericsson, Nokia, ZTE, no relearning curve.",
+        desc: "Base stations installed, swapped, or cleanly removed — Huawei, Ericsson, Nokia, no relearning curve.",
       },
       {
         title: "Civil Works & Site Construction",
@@ -194,7 +194,7 @@ const en = {
     ],
   },
 
-  vendors: ["Huawei", "Ericsson", "Nokia", "ZTE"],
+  vendors: ["Huawei", "Ericsson", "Nokia"],
 
   industries: {
     label: "Industries served",
@@ -237,7 +237,7 @@ const en = {
       {
         photo: "bashar-naboulsi.jpg",
         name: "Bashar Naboulsi",
-        role: "Founder & General Manager",
+        role: "Founder & General Manager, EMBA",
         summary:
           "25+ years of leadership in the telecommunications industry.",
         points: [
@@ -249,7 +249,7 @@ const en = {
       {
         photo: "houssam-tarabichi.jpg",
         name: "Houssam Tarabichi",
-        role: "Board Member",
+        role: "Deputy General Manager",
         summary:
           "Industrial entrepreneur with over three decades in manufacturing and industrial development.",
         points: [
@@ -275,7 +275,7 @@ const en = {
       {
         photo: "kinan-saleh.jpg",
         name: "Kinan Saleh",
-        role: "Board Member",
+        role: "Technical Director",
         summary:
           "16+ years of leadership and experience in the transmission field.",
         points: [

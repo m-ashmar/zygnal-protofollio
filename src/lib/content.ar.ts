@@ -109,8 +109,8 @@ const ar: typeof en = {
   },
 
   stats: [
-    { value: "15+", label: "مهندسون" },
-    { value: "7", label: "فرق ميدانية" },
+    { value: "50+", label: "مهندسون" },
+    { value: "15", label: "فرق ميدانية" },
     { value: "وطنيًا", label: "نطاق النشر" },
     { value: "متعدد المورّدين", label: "Huawei · Ericsson · Nokia" },
   ],
@@ -140,7 +140,7 @@ const ar: typeof en = {
       },
       {
         title: "تركيب المحطات القاعدية وتفكيكها",
-        desc: "تركيب المحطات القاعدية أو استبدالها أو تفكيكها بنظافة — هواوي وإريكسون ونوكيا وZTE، دون منحنى تعلّم.",
+        desc: "تركيب المحطات القاعدية أو استبدالها أو تفكيكها بنظافة — هواوي وإريكسون ونوكيا، دون منحنى تعلّم.",
       },
       {
         title: "الأعمال المدنية وإنشاء المواقع",
@@ -197,7 +197,7 @@ const ar: typeof en = {
     ],
   },
 
-  vendors: ["Huawei", "Ericsson", "Nokia", "ZTE"],
+  vendors: ["Huawei", "Ericsson", "Nokia"],
 
   industries: {
     label: "القطاعات التي نخدمها",
@@ -240,7 +240,7 @@ const ar: typeof en = {
       {
         photo: "bashar-naboulsi.jpg",
         name: "بشار نابلسي",
-        role: "المؤسس والمدير العام",
+        role: "المؤسس والمدير العام، EMBA",
         summary: "أكثر من 25 عامًا من القيادة في قطاع الاتصالات.",
         points: [
           "المدير التقني السابق لشركة MTN سوريا",
@@ -251,7 +251,7 @@ const ar: typeof en = {
       {
         photo: "houssam-tarabichi.jpg",
         name: "حسام الطرابيشي",
-        role: "عضو مجلس الإدارة",
+        role: "نائب المدير العام",
         summary:
           "رائد أعمال صناعي بخبرة تتجاوز ثلاثة عقود في التصنيع والتنمية الصناعية.",
         points: [
@@ -277,7 +277,7 @@ const ar: typeof en = {
       {
         photo: "kinan-saleh.jpg",
         name: "كنان صالح",
-        role: "عضو مجلس الإدارة",
+        role: "المدير الفني",
         summary: "أكثر من 16 عامًا من القيادة والخبرة في مجال النقل (Transmission).",
         points: [
           "مدير النقل ورئيس وحدة سابقًا في سيرياتيل",
