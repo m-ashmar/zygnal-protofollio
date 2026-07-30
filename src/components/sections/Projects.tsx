@@ -3,6 +3,7 @@
 import Reveal from "@/components/site/Reveal";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Spotlight from "@/components/ui/Spotlight";
+import LogoWatermark from "@/components/ui/LogoWatermark";
 import { useApp } from "@/components/providers/AppProvider";
 
 export default function Projects() {
@@ -11,6 +12,8 @@ export default function Projects() {
 
   return (
     <section id="projects" className="section relative overflow-hidden border-t border-line/60">
+      <LogoWatermark className="-bottom-20 -right-16 w-[22rem] rotate-[4deg]" />
+
       <div className="container-x relative">
         <SectionHeader
           index={p.index}

@@ -5,11 +5,20 @@
  */
 const LOGO_SRC = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/brand/zygnal-logo.png`;
 
-export default function Logo({ className = "" }: { className?: string }) {
+export default function Logo({
+  className = "",
+  decorative = false,
+}: {
+  className?: string;
+  /** Set true for repeated/background uses (watermarks, floating marks) so
+   * screen readers don't hear "Zygnal LLC" announced over and over. */
+  decorative?: boolean;
+}) {
   return (
     <span
-      role="img"
-      aria-label="Zygnal LLC"
+      {...(decorative
+        ? { "aria-hidden": true }
+        : { role: "img", "aria-label": "Zygnal LLC" })}
       className={`inline-block bg-current ${className}`}
       style={{
         aspectRatio: "1600 / 419",

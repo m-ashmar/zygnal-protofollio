@@ -3,6 +3,7 @@
 import Reveal from "@/components/site/Reveal";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Spotlight from "@/components/ui/Spotlight";
+import LogoWatermark from "@/components/ui/LogoWatermark";
 import { useApp } from "@/components/providers/AppProvider";
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -96,6 +97,8 @@ export default function Work() {
 
   return (
     <section id="work" className="section relative overflow-hidden border-t border-line/60">
+      <LogoWatermark className="-left-20 -top-10 w-[24rem] -rotate-[8deg]" flip />
+
       <div className="container-x relative">
         <SectionHeader
           index={w.index}
