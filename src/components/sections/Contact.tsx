@@ -2,6 +2,7 @@
 
 import Reveal from "@/components/site/Reveal";
 import Logo from "@/components/site/Logo";
+import Signature from "@/components/site/Signature";
 import MagneticButton from "@/components/ui/MagneticButton";
 import SignalRings from "@/components/ui/SignalRings";
 import { useApp } from "@/components/providers/AppProvider";
@@ -112,11 +113,16 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 border-t border-line/60 py-6 text-center font-mono text-[0.68rem] uppercase tracking-[0.15em] text-text-faint sm:flex-row sm:justify-between sm:text-left">
-          <span>
-            © {new Date().getFullYear()} {t.company.name}. {c.rights}
-          </span>
-          <span>{t.company.tagline}</span>
+        <div className="border-t border-line/60 py-6">
+          <div className="flex flex-col gap-2 text-center font-mono text-[0.68rem] uppercase tracking-[0.15em] text-text-faint sm:flex-row sm:justify-between sm:text-left">
+            <span>
+              © {new Date().getFullYear()} {t.company.name}. {c.rights}
+            </span>
+            <span>{t.company.tagline}</span>
+          </div>
+          <div className="mt-5 flex justify-center border-t border-line/40 pt-5">
+            <Signature />
+          </div>
         </div>
       </div>
     </footer>

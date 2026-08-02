@@ -110,7 +110,7 @@ const ar: typeof en = {
 
   stats: [
     { value: "50+", label: "مهندسون" },
-    { value: "15", label: "فرق ميدانية" },
+    { value: "11", label: "فرق ميدانية" },
     { value: "وطنيًا", label: "نطاق النشر" },
     { value: "متعدد المورّدين", label: "Huawei · Ericsson · Nokia" },
   ],
@@ -226,6 +226,7 @@ const ar: typeof en = {
       { name: "BES", logo: "bes-logo.png", note: "أفضل الخدمات الهندسية — شركة شقيقة" },
       { name: "شركة الأمجاد", logo: "amjaad-logo.png", note: "المقاولات العامة" },
       { name: "Zee Generation", logo: "zee-logo.jpg", note: "دبي، الإمارات" },
+      { name: "TechNova Dev", logo: "technova-logo.jpg", note: "حلول البرمجيات والذكاء الاصطناعي والويب" },
     ],
   },
 
@@ -334,6 +335,7 @@ const ar: typeof en = {
     contactLabel: "للتواصل",
     locationsLabel: "المواقع",
     rights: "جميع الحقوق محفوظة.",
+    builtBy: "تصميم وتطوير",
   },
 
   company: {

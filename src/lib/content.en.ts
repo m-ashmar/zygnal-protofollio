@@ -107,7 +107,7 @@ const en = {
 
   stats: [
     { value: "50+", label: "Engineers" },
-    { value: "15", label: "Field teams" },
+    { value: "11", label: "Field teams" },
     { value: "Nationwide", label: "Deployment reach" },
     { value: "Multi-vendor", label: "Huawei · Ericsson · Nokia" },
   ],
@@ -223,6 +223,7 @@ const en = {
       { name: "BES", logo: "bes-logo.png", note: "Best Engineering Services — sister company" },
       { name: "Amjaad Company", logo: "amjaad-logo.png", note: "General contracting" },
       { name: "Zee Generation", logo: "zee-logo.jpg", note: "Dubai, UAE" },
+      { name: "TechNova Dev", logo: "technova-logo.jpg", note: "Software, AI and web solutions" },
     ],
   },
 
@@ -333,6 +334,7 @@ const en = {
     contactLabel: "Contact",
     locationsLabel: "Locations",
     rights: "All rights reserved.",
+    builtBy: "Designed and developed by",
   },
 
   company: {

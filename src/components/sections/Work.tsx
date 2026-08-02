@@ -137,7 +137,7 @@ export default function Work() {
               {w.partnersLabel}
             </div>
           </Reveal>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {w.partners.map((p, i) => (
               <Reveal key={p.name} delay={i * 80}>
                 <PartnerCard name={p.name} note={p.note} logo={p.logo} />
