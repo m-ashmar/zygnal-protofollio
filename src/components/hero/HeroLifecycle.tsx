@@ -225,7 +225,10 @@ export default function HeroLifecycle() {
         </div>
 
         {/* HUD (top-right) */}
-        <div className="pointer-events-none absolute right-[clamp(1.25rem,5vw,3rem)] top-24 hidden items-center gap-3 font-mono text-[0.65rem] uppercase tracking-[0.22em] text-text-faint sm:flex">
+        <div
+          dir={locale === "ar" ? "rtl" : "ltr"}
+          className="pointer-events-none absolute right-[clamp(1.25rem,5vw,3rem)] top-24 hidden items-center gap-3 font-mono text-[0.65rem] uppercase tracking-[0.22em] text-text-faint sm:flex"
+        >
           <span className="live-pulse inline-block h-2 w-2 rounded-full bg-amber" />
           <span>{t.hero.phaseLabel}</span>
           <span ref={hudIndexRef} className="text-cyan">
