@@ -226,7 +226,7 @@ const ar: typeof en = {
       { name: "BES", logo: "bes-logo.png", note: "أفضل الخدمات الهندسية — شركة شقيقة" },
       { name: "شركة الأمجاد", logo: "amjaad-logo.png", note: "المقاولات العامة" },
       { name: "Zee Generation", logo: "zee-logo.jpg", note: "دبي، الإمارات" },
-      { name: "TechNova Dev", logo: "technova-logo.jpg", note: "حلول البرمجيات والذكاء الاصطناعي والويب" },
+      { name: "TechNova Dev", logo: "technova-logo.jpg", note: "حلول البرمجيات والذكاء الاصطناعي والويب", url: "https://technovadev.com" },
     ],
   },
 

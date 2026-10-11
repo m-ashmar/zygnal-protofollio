@@ -52,14 +52,16 @@ function PartnerCard({
   name,
   note,
   logo,
+  url,
 }: {
   name: string;
   note: string;
   logo: string;
+  url?: string;
 }) {
   // Full-bleed artwork logos (light mark on their own background) fill the tile.
   const artwork = /\.jpe?g$/i.test(logo);
-  return (
+  const card = (
     <Spotlight className="card card-hover group relative flex h-full flex-col items-center p-6 text-center">
       {/* logo tile — light plate for dark marks; the artwork logo fills its own tile */}
       <div
@@ -86,8 +88,27 @@ function PartnerCard({
       </div>
       <p className="mt-4 font-mono text-[0.72rem] uppercase tracking-[0.15em] text-text-muted">
         {note}
+        {url && (
+          <span aria-hidden className="ms-1.5 inline-block text-cyan transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 rtl:-scale-x-100">
+            ↗
+          </span>
+        )}
       </p>
     </Spotlight>
+  );
+
+  if (!url) return card;
+
+  // rel="noopener" without noreferrer, so the partner can see the visit came from zygnalsy.com.
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener"
+      className="block h-full rounded-[var(--radius)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan"
+    >
+      {card}
+    </a>
   );
 }
 
@@ -140,7 +161,7 @@ export default function Work() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {w.partners.map((p, i) => (
               <Reveal key={p.name} delay={i * 80}>
-                <PartnerCard name={p.name} note={p.note} logo={p.logo} />
+                <PartnerCard name={p.name} note={p.note} logo={p.logo} url={"url" in p ? p.url : undefined} />
               </Reveal>
             ))}
           </div>

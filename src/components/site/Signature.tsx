@@ -6,6 +6,8 @@ import { useApp } from "@/components/providers/AppProvider";
  * Build credit for TechNova Dev. The wordmark is set in type rather than as an
  * image so it stays crisp at this size and reads correctly in both themes:
  * "TECH" takes the surrounding text colour, "NOVA" uses the TechNova brand blue.
+ * It links to technovadev.com in a new tab, keeping the referrer so the visit
+ * shows up as coming from zygnalsy.com.
  */
 const TECHNOVA_BLUE = "#0A84FF";
 
@@ -14,7 +16,9 @@ export default function Signature() {
 
   return (
     <a
-      href="mailto:nova@technovasy.com"
+      href="https://technovadev.com"
+      target="_blank"
+      rel="noopener"
       className="group inline-flex items-center gap-2 font-mono text-[0.66rem] uppercase tracking-[0.18em] text-text-faint transition-colors hover:text-text-muted"
     >
       <span>{t.contact.builtBy}</span>

@@ -223,7 +223,7 @@ const en = {
       { name: "BES", logo: "bes-logo.png", note: "Best Engineering Services — sister company" },
       { name: "Amjaad Company", logo: "amjaad-logo.png", note: "General contracting" },
       { name: "Zee Generation", logo: "zee-logo.jpg", note: "Dubai, UAE" },
-      { name: "TechNova Dev", logo: "technova-logo.jpg", note: "Software, AI and web solutions" },
+      { name: "TechNova Dev", logo: "technova-logo.jpg", note: "Software, AI and web solutions", url: "https://technovadev.com" },
     ],
   },
 
